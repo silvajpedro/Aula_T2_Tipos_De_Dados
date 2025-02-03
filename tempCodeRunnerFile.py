@@ -1,0 +1,1 @@
++ str(valor_prato + valor_bebida)

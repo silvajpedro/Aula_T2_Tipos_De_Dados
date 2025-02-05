@@ -1,1 +1,1 @@
-+ str(valor_prato + valor_bebida)
+print("String unida com '--':", string_unida)

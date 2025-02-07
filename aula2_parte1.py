@@ -1,12 +1,3 @@
-"""
-Exemplo de Loops e Manipulação de Strings em Python
-
-Este script demonstra:
-1. Uso do loop 'while' para executar um bloco de código enquanto uma condição é verdadeira.
-2. Uso do loop 'for' para iterar sobre listas e sobre um intervalo de números.
-3. Manipulação de strings utilizando métodos nativos do Python.
-"""
-
 # =============================
 # Exemplo 1: Loop 'while'
 # =============================

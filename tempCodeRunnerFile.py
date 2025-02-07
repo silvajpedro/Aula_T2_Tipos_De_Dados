@@ -1,1 +1,1 @@
-print("String unida com '--':", string_unida)
+len(pessoas_cadastradas)

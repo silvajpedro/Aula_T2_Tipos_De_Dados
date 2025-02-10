@@ -1,1 +1,1 @@
-len(pessoas_cadastradas)
+calculo()

@@ -18,21 +18,15 @@ def dados_invalidos():
 
 # Solicitando credenciais do usuário
 login = input("Digite o seu e-mail: ")
+senha = int(input("Digite a sua senha: "))  # Agora sempre será tratado como número inteiro
 
-try:
-    senha = int(input("Digite a sua senha: "))
-except ValueError:
-    print("Erro: A senha deve ser um número inteiro.")
-    senha = None  # Definir como None para evitar verificação incorreta
-
-# Verificando credenciais apenas se a senha foi inserida corretamente
-if senha is not None:
-    if login == "joaodascouves@gmail.com" and senha == 123:
-        boas_vindas(login)
-    elif login == "fernandadopix@gmail.com" and senha == 321:
-        pague_pessoas()
-    else:
-        dados_invalidos()
+# Verificando credenciais
+if login == "joaodascouves@gmail.com" and senha == 123:
+    boas_vindas(login)
+elif login == "fernandadopix@gmail.com" and senha == 321:
+    pague_pessoas()
+else:
+    dados_invalidos()
 
 # ----------- Conversão de Tipos em Python -----------
 
@@ -79,18 +73,4 @@ nomes_clientes = {
 # Adicionando um novo nome ao cliente do Ceará
 nomes_clientes['cliente_ce'].append("Enzo")
 
-# Exibindo dicionário atualizado
-print("\nLista de clientes atualizada:")
-print(nomes_clientes)
-
-# Adicionando um novo cliente
-nomes_clientes.update({'cliente_df': 'Lucas'})
-
-# Exibir dicionário atualizado novamente
-print("\nLista de clientes com nova adição:")
-print(nomes_clientes)
-
-# Exibir apenas os valores (nomes dos clientes)
-print("\nLista de clientes por estado:")
-for clientes in nomes_clientes.values():
-    print(clientes)
+# Exib
